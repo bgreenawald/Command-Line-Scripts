@@ -21,17 +21,17 @@ $profile
 Then, created a subdirectory called "Scripts\autoload\General" and clone this repo into that directory.
 * To complete setup, open your profile in the Powershell ISE and add the following
 ```powershell
-\# directory where my scripts are stored
+# directory where my scripts are stored
 
 $psdir_general = "LOCATION OF THE CLONED REPO"
 
-\# load all 'autoload' scripts
+# load all 'autoload' scripts
 
 Get-ChildItem "${psdir_general}\*.ps1" | %{.$_} 
 
 Write-Host "Custom PowerShell Environment Loaded"
 
-\# Optional, get the tab autocomplete more like bash
+# Optional, get the tab autocomplete more like bash
 
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 ```
