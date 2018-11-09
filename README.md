@@ -35,3 +35,7 @@ Write-Host "Custom PowerShell Environment Loaded"
 
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 ```
+
+## Next Steps
+
+Check out the *Documentation.md* file for more about what each script does, and feel free to contact me for any script recommendations that you have!
